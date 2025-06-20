@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrainHUB</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/header.css">
+</head>
+
+<body>
+    <header>
+        <div class="container_head" id="top">
+            <div class="head_logo">
+                <img class="logo" src="image/logo.png" alt="logo">
+                Train<span style="color: orangered;">HUB</span>
+            </div>
+            <div class="head_text">
+                <a class="text_scale" href="">Главная</a>
+                <a class="text_scale" href="group/index.html">групповые занятия</a>
+                <a class="text_scale" href="treiner/index.html">личный тренер</a>
+                <a class="text_scale" href="traning/index.html">план тренировок</a>
+            </div>
+            <a href="login/index.html" class="head_login">Войти</a>
+        </div>
+    </header>
+    <div class="container_home">
+        <div class="home_title">Train<span style="color: orangered;">HUB</span></div>
+        <div class="title_bottom">Твоя трансформация начинается здесь</div>
+    </div>
+    <div class="container_ready">
+        <div class="ready_top">
+            <div class="top_cards">ВСЕ<br>
+                ВИДЫ<br>
+                КАРТ
+            </div>
+            <div class="top_text">Готовы начать?
+                <div class="top_text_description">Выберите тариф, внимательно заполните данные и мы обязательно свяжемся
+                    с вами,
+                    чтобы заключить договор и сделать вас членом клуба.</div>
+            </div>
+        </div>
+        <div class="ready_bottom">
+            <div class="bottom_cards">
+                <div class="cards_species">
+                    <button class="species" id="speciesDay" onmousedown="viewDivOne()">
+                        <img class="sky" src="image/sun.png">
+                        Дневной
+                    </button>
+                    <button class="species" id="speciesNight" onmousedown="viewDivTwo()">
+                        <img class="sky" src="image/moons.png">
+                        Вечерний
+                    </button>
+                    <button class="species" id="speciesVip" onmousedown="viewDivThree()">
+                        <img class="sky" src="image/sparkle.png">
+                        Постоянный
+                    </button>
+                </div>
+                <div class="cards_info" id="day">
+                    <span class="info_media">Дневной</span>
+                    Время посещения:<br>
+                    Понедельник - воскресенье<br>
+                    7:00 - 17:00<br>
+                    12 посещений<br>
+                    Период заморозки:<br>
+                    30 дней
+                </div>
+                <div class="cards_info" id="night">
+                    <span class="info_media">Вечерний</span>
+                    Время посещения:<br>
+                    Понедельник - воскресенье<br>
+                    7:00 - 23:00<br>
+                    12 посещений<br>
+                    Басейн:<br>
+                    17:00 - 21:00<br>
+                    Период заморозки:<br>
+                    30 дней
+                </div>
+                <div class="cards_info" id="vip">
+                    <span class="info_media">Постоянный</span>
+                    Время посещения:<br>
+                    Понедельник - воскресенье<br>
+                    7:00 - 23:00<br>
+                    Посещения не ограничены<br>
+                    Басейн:<br>
+                    7:00 - 21:00<br>
+                    Период заморозки:<br>
+                    30 дней
+                </div>
+            </div>
+            <div class="sent" id="Sen">
+                <img class="sky" src="image/approve-sign.png">
+                Заявка отправлена
+            </div>
+            <div class="bottom_input" id="Input">
+                <input type="text" placeholder="Ваше имя">
+                <input type="text" placeholder="Ваша фамилия">
+                <input type="text" placeholder="Контактный телефон">
+                <input type="text" placeholder="Ваш e-mail">
+                <button class="input_button" onmousedown="viewDivFour()">Отправить заявку</button>
+            </div>
+        </div>
+    </div>
+    <div class="container_group">
+        <div class="group_text">
+            <span class="group_text_title">Групповые занятия</span>
+            Тренируйся в команде! Йога, кардио, силовые и танцевальные классы с тренером и отличной атмосферой.
+        </div>
+        <div class="group_block">
+            <a href="groupcard/yoga.html" class="group_box">
+                <div class="box_image img_bottom">
+                    <img src="image/photo_5255774969747603717_y.jpg" alt="">
+                </div>
+                <div class="box_text">
+                    <span class="box_text_title" >Йога</span>
+                    Мягкая тренировка для гибкости, расслабления и внутреннего баланса.
+                </div>
+            </a>
+            <a href="groupcard/Stretching.html" class="group_box">
+                <div class="box_image">
+                    <img src="image/pexels-yankrukov-8436691.jpg" alt="">
+                </div>
+                <div class="box_text">
+                    <span class="box_text_title">Stretching</span>
+                    Весёлое кардио в формате танцев — сжигает калории и поднимает настроение.
+                </div>
+            </a>
+            <a href="groupcard/Pilates.html" class="group_box">
+                <div class="box_image">
+                    <img src="image/IMG_5186.JPG" alt="">
+                </div>
+                <div class="box_text">
+                    <span class="box_text_title">Pilates</span>
+                    Укрепление мышц корпуса, улучшение осанки и формирование стройной фигуры.
+                </div>
+            </a>
+            <a href="group/index.html" class="group_a">перейти на&nbsp;<span> страницу</span></a>
+        </div>
+    </div>
+    <div class="container_trainer">
+        <div class="trainer_block">
+            <div class="trainer_text">
+                <div class="trainer_title">Профессионалы, которые ведут тебя к результату.</div>
+                <div class="trainer_description">
+                    Каждый тренер TrainHUB — сертифицированный специалист с опытом и подходом к любому уровню подготовки. Мы не просто тренируем — мы мотивируем, поддерживаем и помогаем достигать целей безопасно и эффективно.</div>
+            </div>
+            <a href="treiner/index.html" class="trainer_button">перейти на&nbsp;<span> страницу</span></a>
+        </div>
+    </div>
+    <header>
+        <div class="container_head">
+            <div class="head_logo">
+                <a href="#top">TrainHUB</a>
+            </div>
+            <div class="foter_text">
+                <span>TrainHUB@gmail.com</span>
+                <span>+7(747)635 72 95</span>
+                <a href="https://web.telegram.org/" class="mann"><img class="mass" src="image/telegram.png" alt="logo"></a>
+                <a href="https://www.instagram.com/" class="mann"> <img class="mass" src="image/instagram.png" alt="logo"></a>
+                <a href="https://www.whatsapp.com/" class="mann"><img class="mass" src="image/whatsapp.png" alt="logo"></a>
+            </div>
+        </div>
+    </header>
+    <script src="JavaScript/script.js"></script>
+</body>
+
+</html>
